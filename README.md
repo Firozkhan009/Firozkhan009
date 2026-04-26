@@ -6,6 +6,14 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 
 ---
 
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Firozkhan009&theme=default&hide_border=true" alt="GitHub streak" />
+  &nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Firozkhan009&layout=compact&hide_border=true&theme=default" alt="Top languages" />
+</p>
+
+---
+
 ## What I build
 
 - **GenAI applications** — LLM-powered tools, AI pipelines, personalized digest systems
