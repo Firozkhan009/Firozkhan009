@@ -1,17 +1,16 @@
 # Hi, I'm Firoz 👋
 
-**AI Engineer** focused on building production LLM systems — RAG pipelines, intelligent agents, and fine-tuned models.
+**AI Engineer** focused on building production LLM systems and full-stack AI applications.
 
-Currently completing my **MS in Computer Science @ University of Georgia** (May 2026), where I've shipped end-to-end GenAI applications and published ML research at an international conference.
+Currently completing my **MS in Computer Science @ University of Georgia** (May 2026), with published ML research at an international conference.
 
 ---
 
 ## What I build
 
-- **RAG pipelines** — hybrid retrieval (dense + BM25 + reranking), vector stores, RAGAS evaluation
-- **AI agents** — LangGraph stateful workflows, MCP-connected tools, multi-agent systems with CrewAI
-- **Fine-tuned LLMs** — QLoRA on Llama 3 / Mistral, HuggingFace Hub deployment, production serving
-- **Full-stack AI apps** — React + FastAPI + Docker + AWS + GitHub Actions CI/CD
+- **GenAI applications** — LLM-powered tools, AI pipelines, personalized digest systems
+- **Full-stack AI apps** — React + FastAPI + Docker + PostgreSQL + AWS
+- **ML systems** — classical ML, neural networks, embeddings, clustering
 
 ---
 
@@ -19,24 +18,24 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 
 | Project | What it does | Stack |
 |---|---|---|
-| [Resume Analyzer AI](https://github.com/Firozkhan009) | RAG pipeline + LLM evaluation with RAGAS, ATS scoring, job-fit prediction | LangChain · Pinecone · FastAPI · React |
-| [Multi-Doc Research Agent](https://github.com/Firozkhan009) | LangGraph agent with hybrid retrieval across multiple PDFs, source citations | LangGraph · ChromaDB · MLflow |
+| [AI News Aggregator](https://github.com/Firozkhan009/AI-NEWS-AGGREGATOR) | Scrapes AI news from YouTube & blogs, generates personalized daily digests with OpenAI, delivers by email | FastAPI · PostgreSQL · OpenAI · Docker |
+| [Resume Analyzer AI](https://github.com/Firozkhan009) | LLM-driven resume evaluation, ATS-style scoring, and job-fit prediction | React · Tailwind · Puter.js |
 | [ML Coursework — 11 Labs](https://github.com/Firozkhan009/ml-coursework) | Regression, SVM, neural networks from scratch, embeddings, clustering | PyTorch · scikit-learn · NumPy |
-| [LetsChat](https://github.com/Firozkhan009) | TCP multi-user chat + MCP-connected AI assistant with tool use | Python · Docker · LangChain |
+| [LetsChat](https://github.com/Firozkhan009) | TCP multi-user real-time chat with multiplexed I/O | Python · Docker |
+| [E-Cinema Booking](https://github.com/Firozkhan009) | Full-stack movie ticketing with real-time seat selection and role-based dashboards | React · Node.js · MongoDB |
 
 ---
 
 ## Tech stack
 
 ```
-GenAI & LLMs   LangChain · LlamaIndex · LangGraph · OpenAI API · Anthropic API
-               RAG · Pinecone · ChromaDB · Prompt Engineering · LoRA/QLoRA · RAGAS
+GenAI & LLMs   OpenAI API · Anthropic API · Prompt Engineering · LLM Evaluation
 
-ML / AI        PyTorch · HuggingFace · scikit-learn · MLflow · Embeddings · SVM
+ML / AI        PyTorch · scikit-learn · HuggingFace · Embeddings · SVM · Neural Networks
 
-Full-stack     React · Next.js · Node.js · FastAPI · MongoDB · REST APIs
+Full-stack     React · Next.js · Node.js · FastAPI · PostgreSQL · MongoDB · REST APIs
 
-DevOps         Docker · AWS · GitHub Actions CI/CD · Linux
+DevOps         Docker · AWS · GitHub Actions CI/CD · Linux · Git
 ```
 
 ---
@@ -44,8 +43,8 @@ DevOps         Docker · AWS · GitHub Actions CI/CD · Linux
 ## Currently
 
 - 🎓 MS CS @ University of Georgia — graduating May 2026
-- 🔨 Building production GenAI projects for my portfolio
-- 📖 Learning LangGraph agents, fine-tuning, and LLMOps
+- 🔨 Building production GenAI projects
+- 📖 Learning RAG, LangChain agents, and LLMOps
 - 🌍 Open to AI Engineer roles in UK · UAE · Germany · Saudi Arabia · India
 - 📄 Published: *Crime Analysis and Detection Using ML* — AIP Conference Proceedings, ICCCAI 2024
 
