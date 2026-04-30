@@ -53,7 +53,6 @@ DevOps         Docker · AWS · GitHub Actions CI/CD · Linux · Git
 - 🎓 MS CS @ University of Georgia — graduating May 2026
 - 🔨 Building production GenAI projects
 - 📖 Learning RAG, LangChain agents, and LLMOps
-- 🌍 Open to AI Engineer roles in UK · UAE · Germany · Saudi Arabia · India
 - 📄 Published: *Crime Analysis and Detection Using ML* — AIP Conference Proceedings, ICCCAI 2024
 
 ---
