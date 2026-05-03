@@ -36,7 +36,7 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 
 ## Tech stack
 
-​```
+
 GenAI & LLMs   OpenAI API · Anthropic API · Prompt Engineering · LLM Evaluation
 
 ML / AI        PyTorch · scikit-learn · HuggingFace · Embeddings · SVM · Neural Networks
@@ -44,7 +44,7 @@ ML / AI        PyTorch · scikit-learn · HuggingFace · Embeddings · SVM · Ne
 Full-stack     React · Next.js · Node.js · FastAPI · PostgreSQL · MongoDB · REST APIs
 
 DevOps         Docker · AWS · GitHub Actions CI/CD · Linux · Git
-​```
+
 
 ---
 
