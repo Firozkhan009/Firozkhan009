@@ -1,0 +1,96 @@
+name: Generate Stats Card
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fetch GitHub Stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: Firozkhan009
+        run: |
+          python3 << 'EOF'
+          import urllib.request, json, datetime, os
+
+          token = os.environ["GITHUB_TOKEN"]
+          username = os.environ["USERNAME"]
+
+          headers = {
+              "Authorization": f"Bearer {token}",
+              "Content-Type": "application/json"
+          }
+
+          # GraphQL query
+          query = """
+          {
+            user(login: "%s") {
+              repositories(ownerAffiliations: OWNER) {
+                totalCount
+              }
+              contributionsCollection(
+                from: "%s"
+                to: "%s"
+              ) {
+                totalCommitContributions
+              }
+              contributionsCollection2026: contributionsCollection(
+                from: "2026-01-01T00:00:00Z"
+                to: "%s"
+              ) {
+                totalCommitContributions
+              }
+            }
+          }
+          """ % (
+              username,
+              (datetime.datetime.utcnow() - datetime.timedelta(days=365)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+              datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+              datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+          )
+
+          data = json.dumps({"query": query}).encode()
+          req = urllib.request.Request("https://api.github.com/graphql", data=data, headers=headers, method="POST")
+          with urllib.request.urlopen(req) as res:
+              result = json.loads(res.read())["data"]["user"]
+
+          commits_year = result["contributionsCollection"]["totalCommitContributions"]
+          commits_2026 = result["contributionsCollection2026"]["totalCommitContributions"]
+          total_repos  = result["repositories"]["totalCount"]
+
+          svg = f"""<svg width="380" height="120" xmlns="http://www.w3.org/2000/svg">
+            <style>
+              .title {{ font: 600 13px 'Segoe UI', sans-serif; fill: #586069; }}
+              .value {{ font: 700 22px 'Segoe UI', sans-serif; fill: #24292e; }}
+              .label {{ font: 400 12px 'Segoe UI', sans-serif; fill: #586069; }}
+            </style>
+            <rect width="380" height="120" rx="10" fill="white" stroke="#e1e4e8" stroke-width="1"/>
+            <text x="20" y="30" class="title">GitHub Stats</text>
+
+            <text x="20" y="65" class="value">{commits_2026}</text>
+            <text x="20" y="85" class="label">Commits in 2026</text>
+
+            <text x="150" y="65" class="value">{commits_year}</text>
+            <text x="150" y="85" class="label">Commits (last 12 months)</text>
+
+            <text x="295" y="65" class="value">{total_repos}</text>
+            <text x="295" y="85" class="label">Total Repos</text>
+          </svg>"""
+
+          with open("stats-card.svg", "w") as f:
+              f.write(svg)
+          EOF
+
+      - name: Commit SVG
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add stats-card.svg
+          git diff --cached --quiet || git commit -m "chore: update stats card"
+          git push
