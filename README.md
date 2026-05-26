@@ -5,9 +5,11 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Firozkhan009&show_icons=true&count_private=true&include_all_commits=false&hide=stars,forks&custom_title=Commits+%E2%80%94+Past+Year&hide_border=true&theme=default" alt="Commits past year" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Firozkhan009&layout=compact&hide_border=true&theme=default" alt="Top languages" />
+  <img src="https://ghchart.rshah.org/Firozkhan009" alt="Firoz's GitHub commit chart — past year" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Firozkhan009&theme=default" alt="Top languages" />
 </p>
 
 ---
