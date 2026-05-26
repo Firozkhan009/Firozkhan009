@@ -1,13 +1,11 @@
 # Hi, I'm Firoz 👋
-
 **AI Engineer** focused on building production LLM systems and full-stack AI applications.
-
 Currently completing my **MS in Computer Science @ University of Georgia** (May 2026), with published ML research at an international conference.
 
 ---
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Firozkhan009&theme=default&hide_border=true" alt="GitHub streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Firozkhan009&show_icons=true&count_private=true&include_all_commits=false&hide=stars,forks&custom_title=Commits+%E2%80%94+Past+Year&hide_border=true&theme=default" alt="Commits past year" />
   &nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Firozkhan009&layout=compact&hide_border=true&theme=default" alt="Top languages" />
 </p>
@@ -15,7 +13,6 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 ---
 
 ## What I build
-
 - **GenAI applications** — LLM-powered tools, AI pipelines, personalized digest systems
 - **Full-stack AI apps** — React + FastAPI + Docker + PostgreSQL + AWS
 - **ML systems** — classical ML, neural networks, embeddings, clustering
@@ -23,7 +20,6 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 ---
 
 ## Featured projects
-
 | Project | What it does | Stack |
 |---|---|---|
 | [AI News Aggregator](https://github.com/Firozkhan009/AI-NEWS-AGGREGATOR) | Scrapes AI news from YouTube & blogs, generates personalized daily digests with OpenAI, delivers by email | FastAPI · PostgreSQL · OpenAI · Docker |
@@ -36,20 +32,16 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 
 ## Tech stack
 
-
+<pre>
 GenAI & LLMs   OpenAI API · Anthropic API · Prompt Engineering · LLM Evaluation
-
 ML / AI        PyTorch · scikit-learn · HuggingFace · Embeddings · SVM · Neural Networks
-
 Full-stack     React · Next.js · Node.js · FastAPI · PostgreSQL · MongoDB · REST APIs
-
 DevOps         Docker · AWS · GitHub Actions CI/CD · Linux · Git
-
+</pre>
 
 ---
 
 ## Currently
-
 - 🎓 MS CS @ University of Georgia — graduating May 2026
 - 🔨 Building production GenAI projects
 - 📖 Learning RAG, LangChain agents, and LLMOps
@@ -58,6 +50,5 @@ DevOps         Docker · AWS · GitHub Actions CI/CD · Linux · Git
 ---
 
 ## Connect
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/firoz-khan-patan)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:firozkhanp009@gmail.com)
