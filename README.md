@@ -5,7 +5,7 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Firozkhan009&show_icons=true&hide=stars,prs,issues,contribs&show=reviews&include_all_commits=false&count_private=true&custom_title=GitHub+Stats+%7C+2026+%26+Last+12+Months&hide_border=true&theme=default" alt="GitHub Stats" />
+  <img src="https://raw.githubusercontent.com/Firozkhan009/Firozkhan009/main/stats-card.svg" alt="GitHub Stats" />
   &nbsp;
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Firozkhan009&theme=default" alt="Top languages" />
 </p>
