@@ -5,9 +5,7 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=Firozkhan009&show_icons=true&include_all_commits=false&count_private=true&hide=stars,prs,issues,contribs&custom_title=Total+Commits+%7C+2026&hide_border=true&theme=default" alt="GitHub Stats" />
-  &nbsp;
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Firozkhan009&layout=compact&hide_border=true&theme=default" alt="Top Languages" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Firozkhan009&layout=compact&hide_border=true&theme=default&hide=c" alt="Top Languages" />
 </p>
 
 ---
