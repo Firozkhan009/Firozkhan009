@@ -1,3 +1,4 @@
+
 # Hi, I'm Firoz 👋
 **AI Engineer** focused on building production LLM systems and full-stack AI applications.
 Currently completing my **MS in Computer Science @ University of Georgia** (May 2026), with published ML research at an international conference.
@@ -5,9 +6,9 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Firozkhan009/Firozkhan009/main/stats-card.svg" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Firozkhan009&theme=default&hide_border=true" alt="GitHub streak" />
   &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Firozkhan009&theme=default" alt="Top languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Firozkhan009&layout=compact&hide_border=true&theme=default" alt="Top languages" />
 </p>
 
 ---
