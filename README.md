@@ -5,14 +5,8 @@ Currently completing my **MS in Computer Science @ University of Georgia** (May 
 ---
 
 <p align="center">
-  <img src="https://badges.pufler.dev/commits/yearly/Firozkhan009" alt="Commits this year" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Firozkhan009&show_icons=true&hide=stars,prs,issues,contribs&show=reviews&include_all_commits=false&count_private=true&custom_title=GitHub+Stats+%7C+2026+%26+Last+12+Months&hide_border=true&theme=default" alt="GitHub Stats" />
   &nbsp;
-  <img src="https://badges.pufler.dev/commits/monthly/Firozkhan009" alt="Commits last 12 months" />
-  &nbsp;
-  <img src="https://badges.pufler.dev/repos/Firozkhan009" alt="Total repos" />
-</p>
-
-<p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Firozkhan009&theme=default" alt="Top languages" />
 </p>
 
