@@ -60,33 +60,46 @@ jobs:
           data = json.dumps({"query": query}).encode()
           req = urllib.request.Request("https://api.github.com/graphql", data=data, headers=headers, method="POST")
           with urllib.request.urlopen(req) as res:
-              result = json.loads(res.read())["data"]["user"]
+              response_body = res.read()
+              print("Response:", response_body.decode())
+              result = json.loads(response_body)
 
-          commits_year = result["contributionsCollection"]["totalCommitContributions"]
-          commits_2026 = result["contributionsCollection2026"]["totalCommitContributions"]
-          total_repos  = result["repositories"]["totalCount"]
+          if "errors" in result:
+              print("GraphQL errors:", result["errors"])
+              exit(1)
 
-          svg = f"""<svg width="380" height="120" xmlns="http://www.w3.org/2000/svg">
+          user = result["data"]["user"]
+          commits_year = user["contributionsCollection"]["totalCommitContributions"]
+          commits_2026 = user["contributionsCollection2026"]["totalCommitContributions"]
+          total_repos  = user["repositories"]["totalCount"]
+
+          print(f"Commits 2026: {commits_2026}")
+          print(f"Commits last 12 months: {commits_year}")
+          print(f"Total repos: {total_repos}")
+
+          svg = f"""<svg width="480" height="160" xmlns="http://www.w3.org/2000/svg">
             <style>
-              .title {{ font: 600 13px 'Segoe UI', sans-serif; fill: #586069; }}
-              .value {{ font: 700 22px 'Segoe UI', sans-serif; fill: #24292e; }}
+              .title {{ font: 600 14px 'Segoe UI', sans-serif; fill: #586069; }}
+              .value {{ font: 700 26px 'Segoe UI', sans-serif; fill: #24292e; }}
               .label {{ font: 400 12px 'Segoe UI', sans-serif; fill: #586069; }}
+              .divider {{ stroke: #e1e4e8; stroke-width: 1; }}
             </style>
-            <rect width="380" height="120" rx="10" fill="white" stroke="#e1e4e8" stroke-width="1"/>
-            <text x="20" y="30" class="title">GitHub Stats</text>
-
-            <text x="20" y="65" class="value">{commits_2026}</text>
-            <text x="20" y="85" class="label">Commits in 2026</text>
-
-            <text x="150" y="65" class="value">{commits_year}</text>
-            <text x="150" y="85" class="label">Commits (last 12 months)</text>
-
-            <text x="295" y="65" class="value">{total_repos}</text>
-            <text x="295" y="85" class="label">Total Repos</text>
+            <rect width="480" height="160" rx="12" fill="white" stroke="#e1e4e8" stroke-width="1.5"/>
+            <text x="24" y="36" class="title">&#128200; GitHub Stats</text>
+            <line x1="24" y1="48" x2="456" y2="48" class="divider"/>
+            <text x="40" y="95" class="value">{commits_2026}</text>
+            <text x="40" y="118" class="label">Commits in 2026</text>
+            <line x1="186" y1="58" x2="186" y2="138" class="divider"/>
+            <text x="210" y="95" class="value">{commits_year}</text>
+            <text x="210" y="118" class="label">Last 12 months</text>
+            <line x1="356" y1="58" x2="356" y2="138" class="divider"/>
+            <text x="380" y="95" class="value">{total_repos}</text>
+            <text x="380" y="118" class="label">Total Repos</text>
           </svg>"""
 
           with open("stats-card.svg", "w") as f:
               f.write(svg)
+          print("SVG written successfully")
           EOF
 
       - name: Commit SVG
